@@ -1,0 +1,214 @@
+
+@media screen and (max-width: 990px) {
+  .header_nav {
+    top: 0;
+  }
+  .header_nav.header_fixed {
+    height: 65px;
+  }
+  .header_nav .header .navbar {
+    width: 250px;
+    height: 100%;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    right: -250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    z-index: 100;
+    transition: all 0.8s cubic-bezier(1, 0, 0, 1);
+  }
+  .header_nav .header .navbar.change {
+    right: 0;
+    display: flex;
+    text-align: center;
+  }
+  .header_nav .header .navbar.change:before {
+    content: "";
+    visibility: visible;
+    opacity: 0.7;
+  }
+  .header_nav .header .navbar .navbar_items {
+    display: block;
+    padding-top: 155px;
+  }
+  .header_nav .header .navbar .navbar_items .nav_items {
+    margin: 0;
+    padding: 10px 0;
+  }
+  .header_nav .header .navbar .navbar_items .nav_items .nav_link {
+    color: #3764eb;
+    margin: 0;
+    font-size: 25px;
+  }
+  .header_nav .header .navbar .hamburger-menu {
+    top: 12px;
+    z-index: 999;
+  }
+  .header_nav .header .navbar .hamburger-menu .line {
+    width: 100%;
+    height: 3px;
+    background-color: #3764eb;
+    transition: all 0.8s;
+  }
+  .header_nav .header .navbar .hamburger-menu .line.change .line-1 {
+    transform: rotateZ(-45deg) translate(-8px, 6px);
+  }
+  .header_nav .header .navbar .hamburger-menu .line.change .line-2 {
+    opacity: 0;
+  }
+  .header_nav .header .navbar .hamburger-menu .line.change .line-3 {
+    transform: rotateZ(45deg) translate(-6px, -3px);
+  }@media screen and (max-width: 990px) {
+  .header_nav {
+    top: 0;
+  }
+  .header_nav.header_fixed {
+    height: 65px;
+  }
+  .header_nav .header .navbar {
+    width: 250px;
+    height: 100%;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    right: -250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    z-index: 100;
+    transition: all 0.8s cubic-bezier(1, 0, 0, 1);
+  }
+  .header_nav .header .navbar.change {
+    right: 0;
+    display: flex;
+    text-align: center;
+  }
+  .header_nav .header .navbar.change:before {
+    content: "";
+    visibility: visible;
+    opacity: 0.7;
+  }
+  .header_nav .header .navbar .navbar_items {
+    display: block;
+    padding-top: 155px;
+  }
+  .header_nav .header .navbar .navbar_items .nav_items {
+    margin: 0;
+    padding: 10px 0;
+  }
+  .header_nav .header .navbar .navbar_items .nav_items .nav_link {
+    color: #3764eb;
+    margin: 0;
+    font-size: 25px;
+  }
+  .header_nav .header .navbar .hamburger-menu {
+    top: 12px;
+    z-index: 999;
+  }
+  .header_nav .header .navbar .hamburger-menu .line {
+    width: 100%;
+    height: 3px;
+    background-color: #3764eb;
+    transition: all 0.8s;
+  }
+  .header_nav .header .navbar .hamburger-menu .line.change .line-1 {
+    transform: rotateZ(-45deg) translate(-8px, 6px);
+  }
+  .header_nav .header .navbar .hamburger-menu .line.change .line-2 {
+    opacity: 0;
+  }
+  .header_nav .header .navbar .hamburger-menu .line.change .line-3 {
+    transform: rotateZ(45deg) translate(-6px, -3px);
+  }
+  .shape-1 , .shape-2 {
+    display: none;
+  }
+ 
+}
+
+
+@media (min-width: 576px) { 
+
+}
+
+@media (min-width: 768px) { 
+ .intro .content-box {
+    padding: 0;
+  }
+  .intro__header {
+    font-size: 43px;
+    padding: 15px 0px;
+  }
+  .about-section .image-column .inner:before {
+    display: none;
+  }
+  .sec-title h2 {
+    font-size: 24px;
+    padding: 39px 17px 0px 0px;
+  }
+  .about-section .text-column .sec-title .lower-text {
+    font-size: 14px;
+  }
+  .about-section .text-column .text .since:after {
+    display: none;
+  }
+  .about-section .text-column .text .since .txt {
+    position: relative;
+    left: 75px;
+    top: 38px;
+  }
+  .about-section {
+    padding:  0px;
+  }
+  .image-block {
+    display: none;
+  }
+  .edu-section .image-column .inner:before {
+    display:none;
+  }
+  .grants-section {
+    padding:0px;
+  }
+  .grants-section .image-column .inner:before {
+    display: none;
+  }
+  .testi-block .icon {
+    right: 23px;
+  }
+
+  .footer-col {
+    margin-bottom: 40px;
+  }
+  .university .header-link {
+    left: 32%;
+  }
+  .img-col {
+    display: none;
+  }
+  .side-two, .side-three {
+    width: 59%;
+  }
+  .apply {
+    margin: 0px;
+  }
+  .intro .content-box-uni {
+    margin: 240px auto;
+  }
+  .intro__header {
+    margin: 82px auto;
+  }
+}
+
+@media (min-width: 992px) { 
+
+
+}
+
+@media (min-width: 1200px) { 
+
+
+}
