@@ -127,6 +127,33 @@
   .shape-1 , .shape-2 {
     display: none;
   }
+  .intro .content-box-uni {
+    display: flex;
+    margin: 180px auto;
+  }
+  .apply {
+    margin: 16px 0px 0px 16px;
+  }
+  .study-info p {
+    padding-top: 10px;
+  }
+  .about-faculty {
+    padding: 44px 0px;
+  }
+  .faculty-inner {
+    color: #615a5a;
+    font-size: 20px;
+  }
+  .department p {
+    font-size: 18px;
+  }
+  .uni-location p {
+    font-size: 18px;
+  }
+  .uni-name p {
+    padding-bottom: 21px;
+    font-size: 18px;
+  }
  
 }
 
@@ -201,6 +228,7 @@
   .intro__header {
     margin: 82px auto;
   }
+  
 }
 
 @media (min-width: 992px) { 

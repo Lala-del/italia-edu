@@ -736,3 +736,33 @@ table  p {
   transform: rotate(-180deg);
   top: 0.55em;
 }
+
+.review-section .item {
+   margin-left: 15px;;
+}
+
+.review-section .item .text { 
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    height: 86px;
+  }
+
+  .study-row{
+      margin: 30px 0px;
+  }
+
+  .study-side p {
+      color:#5f171f;
+      font-size: 17px;
+      font-weight: bold;
+      line-height: 26px;
+  }
+  .study-info  {
+    font-size: 17px;
+    line-height: 26px;
+}
+  .study-info .secondary{
+    margin-top: 22px;
+  }
