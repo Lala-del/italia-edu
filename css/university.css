@@ -90,11 +90,14 @@
 
  .sidebar-side {
     display: flex;
-    min-height: 100%;
+    min-height: 70%;
+    height: 773px;
+    margin-top: 99px;
     border-radius: 4px;
     background-color: #ffffff;
     border-radius: 4px;
-    box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 5%);
+    border-radius: 0px 0px 15px 15px;
 }
 
 
@@ -737,32 +740,3 @@ table  p {
   top: 0.55em;
 }
 
-.review-section .item {
-   margin-left: 15px;;
-}
-
-.review-section .item .text { 
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    height: 86px;
-  }
-
-  .study-row{
-      margin: 30px 0px;
-  }
-
-  .study-side p {
-      color:#5f171f;
-      font-size: 17px;
-      font-weight: bold;
-      line-height: 26px;
-  }
-  .study-info  {
-    font-size: 17px;
-    line-height: 26px;
-}
-  .study-info .secondary{
-    margin-top: 22px;
-  }
