@@ -665,3 +665,54 @@
     top: 11px;
     transition: transform .5s ease;
   }
+
+  .header ul li {
+    position:relative;
+  }
+  .header ul li ul{
+    list-style:none;
+    position:absolute;
+    content:'';
+    top:100%;
+    left:0;
+    width: 200px;
+    list-style:none;
+    text-align: left;
+  }
+  .header ul li ul{
+    opacity:0;
+    visibility:hidden;
+    transition: .5s ;
+    transform: scaleY(0);
+    transform-origin: top center;
+  }
+  .header ul li:hover ul{
+      background-color: whitesmoke;
+    opacity:1;
+    visibility:visible;
+    transform: scaleY(1);
+  }
+  .header ul li ul li{
+    display:block;
+    transition: all 3ms;
+  }
+  .header ul li ul li:hover{
+    background-color:rgb(207, 207, 207);
+  }
+  .header ul li ul li a{
+    display:block;
+    padding:15px;
+    color: black;
+  }
+  .header-menu ul li{
+    display:inline-block;
+  }
+  
+  .header-menu ul li a{
+    display:block;
+    font-size:20px;
+    padding:20px 18px;
+    line-height: 60px;
+    font-weight: 500;
+    text-transform: capitalize;
+  }
