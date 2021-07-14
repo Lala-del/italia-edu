@@ -164,6 +164,7 @@
     font-size: 27px;
     padding: 0;
   }
+  
 }
 
 @media (min-width: 576px) { 
@@ -279,9 +280,18 @@
   .social-icons {
     padding: 20px 0px;
   }
+  .h-lang {
+    margin-left: 15px;
+    position: relative;
+    padding: 2px 8px;
+    border-radius: 4px;
+    float: right;
+    right: 60px;
+    bottom: 8px;
+  }
 }
 
 @media (min-width: 1200px) { 
-
+  
 
 }

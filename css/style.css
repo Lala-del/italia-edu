@@ -127,8 +127,8 @@ input, textarea {
   text-align: center;
 }
 .header_nav .header .navbar .navbar_items .nav_items .nav_link {
-  font-weight: 600;
-    font-size: 18px;
+  font-weight: 500;
+    font-size: 16px;
   color: #FFFFFF;
   padding: 0px 14px 9px 12px;
   transition: background-position 275ms ease;
@@ -141,6 +141,9 @@ input, textarea {
 
 }
 
+.fa, .fas {
+    font-weight: 500!important;
+}
 
 .header_nav .header .navbar .navbar_items .nav_items .nav_links {
   font-size: 16px;

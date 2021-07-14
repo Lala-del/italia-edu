@@ -86,7 +86,7 @@
     -o-transition: all 0.5s ease;
 }
 
-.service-block-two .inner-box:hover h5, .service-block-two .inner-box:hover h5 a {
+.service-block-two .inner-box:hover a, .service-block-two .inner-box:hover  a {
     color: black!important;
 	opacity:1;
 }
@@ -96,24 +96,24 @@
 	opacity:1;
 }
 
-.service-block-two .inner-box h5 {
-    font-size: 16px;
+.service-block-two .inner-box a {
+    font-size: 14px;
     text-transform: uppercase;
     font-weight: 600;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     line-height: 1.5em;
     position: relative;
     margin: 0;
     z-index: 99;
+    color: #ffaa17;
 }
 
-.service-block-two .inner-box h5:hover {
+.service-block-two .inner-box a:hover {
     
     text-transform: uppercase;
-	color:white!important;
     font-weight: 600;
     letter-spacing: 1px;
-    line-height: 1.1em;
+    line-height: 1.5em;
     margin: 0;
 }
 
@@ -703,6 +703,7 @@
     display:block;
     padding:15px;
     color: black;
+    line-height: 22px;
   }
   .header-menu ul li{
     display:inline-block;
@@ -716,3 +717,67 @@
     font-weight: 500;
     text-transform: capitalize;
   }
+
+  .nav_items .fa-angle-down:before {
+    position: relative;
+    left: 6px;
+    top: 2px;
+  }
+
+  .h-lang {
+    margin-left: 15px;
+    position: relative;
+    padding: 2px 8px;
+    border-radius: 4px;
+}
+.h-lang .h-lang-link {
+   text-decoration: none;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 22px;
+   color: #FFFFFF;
+}
+.h-lang .h-lang-link > i {
+    font-size: 19px;
+    position: relative;
+   top: 1px;
+   left: 6px;
+    pointer-events: none;
+}
+.h-lang .h-lang-list {
+   position: absolute;
+   background-color: whitesmoke;
+   margin-top: 5px;
+   border-radius: 3px;
+   /* border: 1px solid #f2f2f2; */
+   -webkit-box-shadow: 0 10px 12px rgb(0 0 0 / 10%);
+   box-shadow: 0 10px 12px rgb(0 0 0 / 10%);
+   overflow: hidden;
+   list-style-type: none;
+   margin-left: -12px;
+   z-index: 9999;
+   padding: 6px;
+   right: -1px;
+}
+.h-lang .h-lang-list li a {
+   font-size: 12px;
+   color: black;
+   width: 100%;
+   display: block;
+   text-decoration: none;
+   padding: 7px 13.5px;
+   white-space: nowrap;
+}
+.h-lang .h-lang-list li a:hover {
+    background: none;
+    border-radius: 4px;
+    transition: 0.3s all;
+}
+.h-lang .h-lang-list li:last-child {
+    border-top: 1px solid #eee;
+    margin-top: 3px;
+}
+.h-lang .h-lang-list li:last-child a {
+    margin-top: 2px;
+}
