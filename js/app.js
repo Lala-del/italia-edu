@@ -1,3 +1,34 @@
+var dropdownButton = $('.dropdownButton');
+    var dropdownMenu = $('.dropdownMenu');
+
+    // Button click
+    dropdownButton.on('click', function () {
+        var _this = $(this);
+
+        dropdownButton.not(_this).removeClass('active').siblings('.dropdownMenu').slideUp(300);
+        _this.toggleClass('active').siblings('.dropdownMenu').slideToggle(300);
+    });
+
+
+
+     $(document).on('click touchstart', function(e) {
+        var target = e.target;
+
+        if (!$(target).is('.dropdownButton')) {
+            dropdownMenu.slideUp(300);
+            dropdownButton.removeClass('active');
+        }
+        if (!$(target).parents('.dropdownButton')) {
+            dropdownMenu.slideUp(300);
+            dropdownButton.removeClass('active');
+        }
+        if (!$(target).parents('.dropdownMenu')) {
+            dropdownMenu.slideUp(300);
+            dropdownButton.removeClass('active');
+        }
+    });
+
+
 const MenuIcon = document.querySelector('.hamburger-menu') 
 const list = document.querySelector('.navbar')
 const body = document.querySelector('body')
@@ -67,35 +98,6 @@ $('.stop').on('click',function(){
 
 
 
-var owl = $('#slider-header');
-owl.owlCarousel({
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:1
-        },
-        1000:{
-            items:1
-        }
-    },
-    loop:true,
-    margin:0,
-    autoplay:true,
-    autoplayTimeout:3000,
-    autoplayHoverPause:true,
-    nav: false,
-		dots: false,
-		loop: true
-		// navText: ["<span class='arrow-icon-left'></span>", "<span class='arrow-icon-right'></span>"],
-});
-$('.play').on('click',function(){
-    owl.trigger('play.owl.autoplay',[1000])
-})
-$('.stop').on('click',function(){
-    owl.trigger('stop.owl.autoplay')
-})
 
 
 
@@ -105,68 +107,7 @@ $('.stop').on('click',function(){
 
 
 //language-dropdown
-    var dropdownButton = $('.dropdownButton');
-    var dropdownMenu = $('.dropdownMenu');
-
-    // Button click
-    dropdownButton.on('click', function () {
-        var _this = $(this);
-
-        dropdownButton.not(_this).removeClass('active').siblings('.dropdownMenu').slideUp(300);
-        _this.toggleClass('active').siblings('.dropdownMenu').slideToggle(300);
-    });
-
-
-
-     $(document).on('click touchstart', function(e) {
-        var target = e.target;
-
-        if (!$(target).is('.dropdownButton')) {
-            dropdownMenu.slideUp(300);
-            dropdownButton.removeClass('active');
-        }
-        if (!$(target).parents('.dropdownButton')) {
-            dropdownMenu.slideUp(300);
-            dropdownButton.removeClass('active');
-        }
-        if (!$(target).parents('.dropdownMenu')) {
-            dropdownMenu.slideUp(300);
-            dropdownButton.removeClass('active');
-        }
-    });
-
-
-
-var owl = $('#review-carousel');
-owl.owlCarousel({
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:1
-        },
-        1000:{
-            items:2
-        }
-    },
-    loop:true,
-    margin:0,
-    autoplay:true,
-    autoplayTimeout:3000,
-    autoplayHoverPause:true,
-    nav: false,
-		dots: false,
-		loop: true
-		// navText: ["<span class='arrow-icon-left'></span>", "<span class='arrow-icon-right'></span>"],
-});
-$('.play').on('click',function(){
-    owl.trigger('play.owl.autoplay',[1000])
-})
-$('.stop').on('click',function(){
-    owl.trigger('stop.owl.autoplay')
-})
-
+    
 
 //// dropdown
 
@@ -180,3 +121,18 @@ $('.dropdown-el').click(function(e) {
 $(document).click(function() {
   $('.dropdown-el').removeClass('expanded');
 });
+
+
+
+// read more
+const readMore =  document.querySelector('.read-more');
+const text = document.querySelector('.text')
+
+readMore.addEventListener('click', (e) => {
+    text.classList.toggle('show-more');
+    if (readMore.innerText === "Read More") {
+        readMore.innerText = 'Read Less'
+    } else {
+        readMore.innerText ='Read More'
+    }
+})

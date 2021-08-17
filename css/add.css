@@ -444,19 +444,49 @@
     border-radius: 13px;
     background-color: #ffffff;
     box-shadow: 0px 0px 15px rgb(0 0 0 / 8%);
+    background-color: white;
+    transition-timing-function: ease-in-out;
+    transition: .10s;
 }
 
+.uni-block .inner-box:hover {
+    background-image: url('../img/images/i.jpg');
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: none;
+    
+}
+
+.uni-block .inner-box:hover h5 a {
+    color: white!important;
+}
+
+.uni-block .inner-box:hover .text {
+    font-weight: 600!important;
+    color: white!important;
+}
 .uni-block .inner-box .image {
     position: relative;
     overflow: hidden;
     background-size: cover;
     background-repeat: no-repeat;
-    bsckground-position: center  center;
+    background-position: center  center;
     height: 100%;
     padding: 100px;
     width: 100%;
 }
 
+.overlay {
+    background-color: rgba(95, 95, 95, 0.2);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    border-radius: 10px;
+  }
 
 
 .uni-block .inner-box .image:before {
@@ -685,6 +715,7 @@
     transition: .5s ;
     transform: scaleY(0);
     transform-origin: top center;
+    z-index: 1;
   }
   .header ul li:hover ul{
       background-color: whitesmoke;
@@ -781,3 +812,150 @@
 .h-lang .h-lang-list li:last-child a {
     margin-top: 2px;
 }
+
+.contact-link {
+    position: relative;
+}
+
+.contact-link a {
+    z-index: 1000;
+    position: fixed!important;
+    bottom: 15px;
+    right: 40px;
+    visibility: visible;
+    opacity: 1;
+    -webkit-transform: scale(1) translateY(0);
+    -ms-transform: scale(1) translateY(0);
+    transform: scale(1) translateY(0);
+    -webkit-transition: all 0.25s ease-in;
+    -o-transition: all 0.25s ease-in;
+    transition: all 0.25s ease-in;
+    height: initial;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 15px;
+    color: #ffaa17;
+    background-color: black;
+    border-radius: 10px;
+    width: fit-content;
+}
+
+.contact-link-mobile {
+    position: relative;
+    display: none;
+}
+
+.contact-link-mobile .modal-for {
+    display: none;
+    z-index: 1000;
+    position: fixed!important;
+    bottom: 15px;
+    right: 40px;
+    visibility: visible;
+    opacity: 1;
+    -webkit-transform: scale(1) translateY(0);
+    -ms-transform: scale(1) translateY(0);
+    transform: scale(1) translateY(0);
+    -webkit-transition: all 0.25s ease-in;
+    -o-transition: all 0.25s ease-in;
+    transition: all 0.25s ease-in;
+    height: initial;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 15px;
+    color: #ffaa17;
+    background-color: black;
+    border-radius: 10px;
+    width: fit-content;
+    border: none;
+    outline: none;
+}
+
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  /* .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+  } */
+
+  .swiper-slide {
+      height: 100vh;
+  }
+
+
+  .d-none {
+      display: none;
+  }
+
+  .modal-backdrop {
+      display: none;
+  }
+
+  .moreText {
+      display: none;
+  }
+
+  .text.show-more .moreText{
+      display: inline;
+  }
+
+  .text.show-more .dots{
+      display: none;
+  }
+
+  .read-more {
+      margin: 20px auto;
+      text-align: center;
+      display: block;
+      border: none;
+      outline: none;
+      padding: 15px 20px;
+      color: #ffaa16;
+      background: black;
+      border-radius: 20px;
+  }
+
+  .pagination-section ul {
+      display: flex;
+      justify-content: space-around;
+  }
